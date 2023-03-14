@@ -84,8 +84,6 @@ if (isset($id))
       })
     }).addTo(map);
 	
-	$("button").button();
-
 	$("input").change(function(){OnSpecialFlagsChanged();});
 	$("select").change(function(){OnSpecialFlagsChanged();});
 
@@ -364,7 +362,7 @@ if (isset($id))
 	}
   </style>
 	</head>
-	<body>
+	<body style="padding-top: 5px; padding-left: 10px;">
 <?php 
     include "menu.php";
     echo(menu("Geofence"));
